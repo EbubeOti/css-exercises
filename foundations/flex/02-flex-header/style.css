@@ -1,6 +1,10 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .logo {
@@ -9,11 +13,23 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  
+  /* This is can be removed if you apply space-between as the justify-content setting in .header */
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  
+  /* this removes the default margin and padding on ul */
+  padding: 0;
+  margin: 0;
+
+  gap: 10px;
 }
 
 a {
